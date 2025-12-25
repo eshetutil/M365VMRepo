@@ -1,0 +1,142 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.helloWorld {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+.todoContainer {
+  margin-top: 16px;
+}
+
+.todoTitle {
+  margin-bottom: 8px;
+}
+
+.todoForm {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.todoInput {
+  flex: 1;
+  padding: 6px 8px;
+}
+
+.todoAddBtn {
+  padding: 6px 12px;
+}
+
+.todoToolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.todoCounts {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.todoFilters {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.todoFilterBtn {
+  padding: 4px 8px;
+}
+
+.active {
+  font-weight: 600;
+  border-bottom: 2px solid currentColor;
+}
+
+.todoClearBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.todoEmpty {
+  opacity: 0.7;
+  font-style: italic;
+}
+
+.todoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todoItem {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.todoCheckboxLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.todoItemTitle {
+  padding: 4px 6px;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 4px;
+}
+
+.todoDone {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.todoDeleteBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.todoCheckboxText {
+  display: inline-block;
+  width: 18px;        /* optional: space for the ✔ */
+  text-align: center; /* optional: center the mark */
+  font-weight: 600;   /* optional: style */
+}
